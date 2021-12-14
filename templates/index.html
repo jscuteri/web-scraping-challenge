@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission To Mars</title>
+</head>
+
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Mission to Mars - Web Scraping</h1>
+        <p class="lead">The purpose of this website is to scrape various websites on the internet for information about Mars!</p>
+        <hr class="my-4">
+        <p>Click the button to below to begin!</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape Mars Data</a>
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Latest Mars News</h1>
+            <h2>{{red_planet.news_title}} </h2>
+            <h3>{{red_planet.news_teaser}}</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h1>Featured Mars Image</h1>
+            <img src="{{red_planet.space_image}}" class="img-fluid" alt="Space Image">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h1>Mars Facts</h1>
+            <table border="1" class="dataframe">
+              <thead>
+                <tr style="text-align: right;">
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mars - Earth Comparison</td>
+                  <td>Mars</td>
+                  <td>Earth</td>
+                </tr>
+                <tr>
+                  <td>Diameter:</td>
+                  <td>6,779 km</td>
+                  <td>12,742 km</td>
+                </tr>
+                <tr>
+                  <td>Mass:</td>
+                  <td>6.39 × 10^23 kg</td>
+                  <td>5.97 × 10^24 kg</td>
+                </tr>
+                <tr>
+                  <td>Moons:</td>
+                  <td>2</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Distance from Sun:</td>
+                  <td>227,943,824 km</td>
+                  <td>149,598,262 km</td>
+                </tr>
+                <tr>
+                  <td>Length of Year:</td>
+                  <td>687 Earth days</td>
+                  <td>365.24 days</td>
+                </tr>
+                <tr>
+                  <td>Temperature:</td>
+                  <td>-87 to -5 °C</td>
+                  <td>-88 to 58°C</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <H2>Mars Hemispheres</H2>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">{{red_planet.title_cerberus}}</h3>
+                <p class="card-text">Click this link to see a high resolution image of the Cerberus Hemisphere</p>
+                <a href="{{red_planet.image_cerberus}}" class="btn btn-primary">Cerberus Hemisphere Image</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">{{red_planet.title_schiaparelli}}</h3>
+                <p class="card-text">Click this link to see a high resolution image of the Schiaparelli Hemisphere</p>
+                <a href="{{red_planet.image_schiaparelli}}" class="btn btn-primary">Schiaparelli Hemisphere Image</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">{{red_planet.title_syrtis}}</h3>
+                <p class="card-text">Click this link to see a high resolution image of the Syrtis Major Hemisphere.</p>
+                <a href="{{red_planet.image_syrtis}}" class="btn btn-primary">Syrtis Major Hemisphere Image</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">{{red_planet.title_valles}}</h3>
+                <p class="card-text">Click this link to see a high resolution image of the Valles Marineris Hemisphere.</p>
+                <a href="{{red_planet.image_valles}}" class="btn btn-primary">Vallets Marineris Hemisphere Image</a>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+
+
+</html>
+    
